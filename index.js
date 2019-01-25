@@ -45,7 +45,7 @@ app.use('/mail', mail);
 app.use('/jwt', jwt);
 
 app.get('**', function (req, res) {
-    res.send('Sorry, this is an invalid URL.');
+    res.send('Sorry, this is an invalid URL...');
 });
 
 app.listen(3000); 
