@@ -8,7 +8,7 @@ var upload = require('./src/router/upload');
 var mail = require('./src/router/mail');
 var jwt = require('./src/router/jwt');
 
-mongoose.connect(connect.url,{ useNewUrlParser: true })
+mongoose.connect(connect.url, { useNewUrlParser: true })
     .then(() => {
         console.log("Connected to Database");
     }).catch(err => {
@@ -48,4 +48,4 @@ app.get('**', function (req, res) {
     res.send('Sorry, this is an invalid URL...');
 });
 
-app.listen(process.env.PORT ||3000); 
+app.listen(process.env.PORT || 3000); 
