@@ -9,7 +9,7 @@ router.post("/addname", (req, res) => {
     });
     myData.save()
         .then(item => {
-            res.send("item saved to database.");
+            res.send("item saved to database");
         })
         .catch(err => {
             res.status(400).send("unable to save to database");
