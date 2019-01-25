@@ -44,7 +44,7 @@ app.use('/upload', upload);
 app.use('/mail', mail);
 app.use('/jwt', jwt);
 
-app.get('*', function (req, res) {
+app.get('**', function (req, res) {
     res.send('Sorry, this is an invalid URL.');
 });
 
